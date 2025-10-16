@@ -46,7 +46,6 @@ brew install kitty
 ```bash
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip
 unzip Agave.zip -d ~/.local/share/fonts/
-fc-cache -fv
 ```
 
 **macOS:**
