@@ -58,7 +58,7 @@ unzip Agave.zip -d ~/Library/Fonts/
 
 ```bash
 mkdir -p ~/.config/kitty
-curl -o ~/.config/kitty/kitty.conf https://raw.githubusercontent.com/gauravgughanedev/kitty/main/kitty.conf
+curl -o ~/.config/kitty/kitty.conf https://raw.githubusercontent.com/gitggaurav/kitty/main/kitty.conf
 ```
 
 ## Key Bindings
