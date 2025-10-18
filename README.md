@@ -1,27 +1,36 @@
-Kitty Terminal Config
+# Kitty Terminal Config
+
 Minimal, modern Kitty configuration for Linux and macOS. Features Agave Nerd Font with a custom warm color scheme.
-Features
 
-Clean powerline tabs with slanted style
-Smooth cursor trail animation
-Interactive scrollbar
-Vim/Nano friendly mouse bindings
-98% background opacity
-Optimized performance settings
+## Features
 
-Installation
-Single Command Installer
-bashbash <(curl -fsSL https://raw.githubusercontent.com/gitggaurav/kitty/main/install.sh)
+- Clean powerline tabs with slanted style
+- Smooth cursor trail animation
+- Interactive scrollbar
+- Vim/Nano friendly mouse bindings
+- 98% background opacity
+- Optimized performance settings
+
+## Installation
+
+### Single Command Installer
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/gitggaurav/kitty/main/install.sh)
+```
+
 The installer will:
+1. Detect your operating system
+2. Install Kitty terminal
+3. Download and install Agave Nerd Font
+4. Set up the configuration file
 
-Detect your operating system
-Install Kitty terminal
-Download and install Agave Nerd Font
-Set up the configuration file
+### Manual Installation
 
-Manual Installation
-Install Kitty:
-bash# Arch Linux
+**Install Kitty:**
+
+```bash
+# Arch Linux
 sudo pacman -S kitty
 
 # Ubuntu/Debian
@@ -35,8 +44,12 @@ sudo yum install kitty
 
 # macOS
 brew install kitty
-Install Agave Nerd Font:
-bash# Linux
+```
+
+**Install Agave Nerd Font:**
+
+```bash
+# Linux
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip
 unzip Agave.zip -d ~/.local/share/fonts/
 fc-cache -f
@@ -44,16 +57,25 @@ fc-cache -f
 # macOS
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip
 unzip Agave.zip -d ~/Library/Fonts/
-Install Config:
-bashmkdir -p ~/.config/kitty
+```
+
+**Install Config:**
+
+```bash
+mkdir -p ~/.config/kitty
 curl -o ~/.config/kitty/kitty.conf https://raw.githubusercontent.com/gitggaurav/kitty/main/kitty.conf
-Color Scheme
-Custom warm palette with dark background (#181c27) and muted earth tones. Cursor highlights in soft blue.
-Requirements
+```
 
-Kitty terminal emulator
-Agave Nerd Font or any Nerd Font
-Linux or macOS
+## Color Scheme
 
-License
+Custom warm palette with dark background (`#181c27`) and muted earth tones. Cursor highlights in soft blue.
+
+## Requirements
+
+- Kitty terminal emulator
+- Agave Nerd Font or any Nerd Font
+- Linux or macOS
+
+## License
+
 MIT
