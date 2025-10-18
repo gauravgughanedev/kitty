@@ -1,84 +1,59 @@
-# Kitty Terminal Config
-
+Kitty Terminal Config
 Minimal, modern Kitty configuration for Linux and macOS. Features Agave Nerd Font with a custom warm color scheme.
+Features
 
-## Features
+Clean powerline tabs with slanted style
+Smooth cursor trail animation
+Interactive scrollbar
+Vim/Nano friendly mouse bindings
+98% background opacity
+Optimized performance settings
 
-- Clean powerline tabs with slanted style
-- Smooth cursor trail animation
-- Interactive scrollbar
-- Vim/Nano friendly mouse bindings
-- 98% background opacity
-- Optimized performance settings
+Installation
+Single Command Installer
+bashbash <(curl -fsSL https://raw.githubusercontent.com/gitggaurav/kitty/main/install.sh)
+The installer will:
 
-## Installation
+Detect your operating system
+Install Kitty terminal
+Download and install Agave Nerd Font
+Set up the configuration file
 
-### 1. Install Kitty
-
-**Arch Linux:**
-```bash
+Manual Installation
+Install Kitty:
+bash# Arch Linux
 sudo pacman -S kitty
-```
 
-**Ubuntu/Debian:**
-```bash
+# Ubuntu/Debian
 sudo apt install kitty
-```
 
-**Fedora:**
-```bash
+# Fedora
 sudo dnf install kitty
-```
 
-**RHEL/CentOS:**
-```bash
+# RHEL/CentOS
 sudo yum install kitty
-```
 
-**macOS:**
-```bash
+# macOS
 brew install kitty
-```
-
-### 2. Install Agave Nerd Font
-
-**Linux:**
-```bash
+Install Agave Nerd Font:
+bash# Linux
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip
 unzip Agave.zip -d ~/.local/share/fonts/
-```
+fc-cache -f
 
-**macOS:**
-```bash
+# macOS
 curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Agave.zip
 unzip Agave.zip -d ~/Library/Fonts/
-```
-
-### 3. Install Config
-
-```bash
-mkdir -p ~/.config/kitty
+Install Config:
+bashmkdir -p ~/.config/kitty
 curl -o ~/.config/kitty/kitty.conf https://raw.githubusercontent.com/gitggaurav/kitty/main/kitty.conf
-```
+Color Scheme
+Custom warm palette with dark background (#181c27) and muted earth tones. Cursor highlights in soft blue.
+Requirements
 
-## Key Bindings
+Kitty terminal emulator
+Agave Nerd Font or any Nerd Font
+Linux or macOS
 
-- `Ctrl+Shift+Click` - Open links
-- `Shift+Click` - Select text (works in vim/nano)
-- `Shift+Right Click` - Extend selection
-- `Ctrl+Shift+Alt+Click` - Rectangle selection
-- `Middle Click` - Paste from selection
-
-## Color Scheme
-
-Custom warm palette with dark background (`#181c27`) and muted earth tones. Cursor highlights in soft blue.
-
-## Requirements
-
-- Kitty terminal emulator
-- Agave Nerd Font or any Nerd Font
-- Linux or macOS
-
-## License
-
+License
 MIT
